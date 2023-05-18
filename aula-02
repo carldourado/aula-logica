@@ -1,14 +1,32 @@
 alert("Exercício I")
-var valor = prompt("Digite um número:")
-if (valor > 10) {
- console.log("O número "+ valor + " é maior que 10")
+var anoAtual = prompt("Digite o ano atual:")
+var anoNascimento = prompt("Digite o ano do seu nascimento:")
+var resultado=(anoAtual - anoNascimento)
+if (resultado < 18) {
+  alert("Você não poderá votar esse ano")
 } else {
-  console.log("O número "+ valor + " não é maior que 10")
+  alert("Você pode votar esse ano")
 }
+
 alert("Exercício II")
-var valor2 = prompt("EX2: Digite um número:")
-if (valor2 >= 0) {
-  console.log("O número "+ valor2 + " é positivo")
+var valorUm = prompt("Escreva o primeiro valor:")
+var valorDois = prompt("Escreva o segundo valor:")
+if (valorUm > valorDois){
+  alert("O valor "+ valorUm+" é o maior valor")
 } else {
-  console.log("O número "+ valor2 + " é negativo")
+  alert("O valor "+valorDois+" é o maior valor")
+}
+
+alert("Exercício III")
+var valorUm = prompt("Escreva o primeiro valor:")
+var valorDois = prompt("Escreva o segundo valor:")
+var valorTres = prompt("Escreva o terceiro valor:")
+if (valorUm > valorDois && valorUm > valorTres){
+  alert("O valor "+ valorUm+" é o maior valor")
+}
+if (valorDois > valorUm && valorDois > valorTres){
+  alert("O valor "+ valorDois+" é o maior valor")
+}
+if (valorTres > valorUm && valorTres > valorDois){
+  alert("O valor "+ valorTres+" é o maior valor")
 }
