@@ -1,0 +1,9 @@
+alert("Exercício I")
+var anoAtual = prompt("Digite o ano atual:")
+var anoNascimento = prompt("Digite o ano do seu nascimento:")
+var resultado=(anoAtual - anoNascimento)
+if (resultado < 18) {
+  alert("Você não poderá votar esse ano")
+} else {
+  alert("Você pode votar esse ano")
+}
