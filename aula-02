@@ -1,9 +1,14 @@
 alert("Exercício I")
-var anoAtual = prompt("Digite o ano atual:")
-var anoNascimento = prompt("Digite o ano do seu nascimento:")
-var resultado=(anoAtual - anoNascimento)
-if (resultado < 18) {
-  alert("Você não poderá votar esse ano")
+var valor = prompt("Digite um número:")
+if (valor > 10) {
+ console.log("O número "+ valor + " é maior que 10")
 } else {
-  alert("Você pode votar esse ano")
+  console.log("O número "+ valor + " não é maior que 10")
+}
+alert("Exercício II")
+var valor2 = prompt("EX2: Digite um número:")
+if (valor2 >= 0) {
+  console.log("O número "+ valor2 + " é positivo")
+} else {
+  console.log("O número "+ valor2 + " é negativo")
 }
